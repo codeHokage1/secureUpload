@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Quattrocento+Sans&family=Space+Mono&display=swap');
+
+.container{
+    background-color: #020c1b;
+    color: #e6f1ff;
+    margin: 50px auto;
+    width: 80%;
+    padding: 40px;
+    border-radius: 10px;
+}
+h1{
+    color: #64ffda;
+    font-family: 'Quattrocento Sans', sans-serif;
+    margin-bottom: 10px;
+}
+.brand{
+    font-family: 'Orbitron', sans-serif;
+    color: #e6f1ff;
+}
+.home-details{
+    color: #e6f1ff;
+    font-family: 'Space Mono', monospace;
+    font-size: 14pt;
+}
+#form{
+    color: #64ffda;
+    font-family: 'Space Mono', monospace;
+    font-size: 14pt;
+    margin: 30px auto;
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+}
+#form input[type="password"], #form input[type="file"]{
+    font-family: 'Space Mono', monospace;
+    font-size: 12pt;
+    padding: 5px;
+}
+#form input[type="submit"]{
+    grid-column: span 2;
+    outline: none;
+    background-color: #64ffda;
+    color: #020c1b;
+    font-family: 'Space Mono', monospace;
+    font-size: 14pt;
+    font-weight: bolder;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 10px 5px #e6f1ff;
+}
+#form input[type="submit"]:hover{
+    box-shadow: 10px 10px #e6f1ff;
+}
+.link-container{
+    text-align: center;
+    margin: 20px 0;
+}
+.link-container p{
+    font-family: 'Space Mono', monospace;
+    color: #64ffda;
+    font-size: 16pt;
+}
+.link-container a{
+    font-family: 'Space Mono', monospace;
+    color: #e6f1ff;
+    font-size: 14pt;
+}
+.footer{
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: #64ffda;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-color: #020c1b;
+    }
+    #form{
+        font-size: 14pt;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 10px;
+    }    
+    .link-container a{
+        max-width: 80%;
+    }
+    
+}

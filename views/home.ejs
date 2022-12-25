@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Quattrocento+Sans&family=Space+Mono&display=swap" rel="stylesheet">    <title>Secure-Upload</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Be Lightweight, Use <span class="brand">Secure-Upload</span> !</h1>
+        <p class="home-details">Upload and retrieve your files swiftly and securely; from anywhere.</p>
+        <form action="/upload" method="post" id="form" enctype="multipart/form-data">
+            <label for="file">Select file:</label>
+            <input type="file" id="file" name="file" required>
+            <label for="password">Password: <span>(Optional)</span> </label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="Upload">
+        </form>
+        <hr>
+    
+        <% if(locals.fileLink){ %>
+            <div class="link-container">
+                <p>Upload Successful! Here's your link:</p>
+                <a href="<%= locals.fileLink %>"><%= locals.fileLink %></a>
+            </div>
+            <hr>
+        <% } %> 
+
+        <p class="footer">&copy;codeHokage 2022</p>
+    
+    </div>
+    
+</body>
+</html>
