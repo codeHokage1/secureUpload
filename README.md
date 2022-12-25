@@ -1,4 +1,4 @@
-# Secure-Upload: Secured and Easy File Storing & Sharing
+# Secure-Upload: secure and easy File Storing & Sharing
 Similar to Google Drive, Dropbox and iCloud but here, you wouldn't need to open an account. Simply upload a file and choose whether to have the file passworded. Voila! You've got your sharable link.
 
 Link to project :link: : https://secureupload.onrender.com/
