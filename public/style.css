@@ -68,7 +68,7 @@ h1{
 .link-container a{
     font-family: 'Space Mono', monospace;
     color: #e6f1ff;
-    font-size: 14pt;
+    font-size: 14pt; 
 }
 .footer{
     text-align: center;
@@ -90,6 +90,8 @@ h1{
     }    
     .link-container a{
         max-width: 80%;
-    }
-    
+           /*Wrap Link*/
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    } 
 }
